@@ -42,7 +42,7 @@
             .navbar-content img {
                 width: 100px;
             }
-            /*Caixa da barra*/
+            /*Caixa da barra de navegação*/
             
             .nav {
                 display: flex;
@@ -86,11 +86,8 @@
                 background-size: cover;
                 background-position: center;
                 width: auto;
-                height: 560px;
+                height: 550px;
             }
-            /*.main-movie:hover {
-        background-image: url(img/trailer.mp4);
-    }*/
             
             .overlay {
                 position: absolute;
