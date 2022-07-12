@@ -1,57 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="netflix css/style.css">
+    <link rel="stylesheet" type="text/css" href="netflix css/header.css">
     <script src="https://kit.fontawesome.com/376820afb2.js" crossorigin="anonymous"></script>
+    <script defer src="./netflix js/script.js"></script>
     <title>Netflix</title>
+
 
 </head>
 
 <body>
     <!-- Navbar -->
     <header class="header">
-        <div class="navbar-content">
-            <a href=""> <img id="logo" src="img/netflix.png" alt=""></a>
-            <!--navbar barra-->
-            <div class="nav">
-                <ul>
-                    <li>Series</li>
-                    <li>Inicio</li>
-                    <li>Filmes</li>
-                    <li>Bombando</li>
-                    <li>Minha Lista</li>
-                    <li>Reveja</li>
-                </ul>
-            </div>
+        <a href=""> <img id="logo" src="img/netflix-logo-navbar.png"></a>
+        <!--navbar barra-->
+        <div class="nav-router">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Series</a></li>
+                <li><a href="">Filmes</a></li>
+                <li><a href="">Bombando</a></li>
+                <li><a href="">Minha Lista</a></li>
+            </ul>
         </div>
         <!--NavBar User-->
         <div class="navbar-user">
-            <ul>
-                <li><i class="fas fa-search"></i></li>
-                <li><i class="far fa-bell"></i></li>
-                <li>Usuário</li>
-            </ul>
+            <div class="container-search">
+                <div class="search">
+                    <i class="icon fas fa-search"></i>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Títulos, gente e gênero" id="inputtext">
+                </div>
+            </div>
+            <div><a href=""><i class="far fa-bell"></i></a></div>
+            <div><a href="">Usuário</a></div>
         </div>
 
     </header>
-    <main>
-        <div class="main-movie">
+     <main>
+        <div class="main-movie" id="main-movie">
             <div class="overlay"></div>
 
             <div class="movie-blockbuster">
                 <div class="sinopse-blockbuster">
                     <img id="logo" src="./img/logonetflix.png" alt="">
-                    <h1>Duas criaturinhas fofas e peludinhas viajam acidentalmente para o futuro... onde estão extintas! Será que esta dupla em forma de donut pode salvar sua espécie?
-                    </h1>
+                    <h2>Duas criaturinhas fofas e peludinhas viajam acidentalmente para o futuro...
+                        onde estão extintas! Será que esta dupla em forma de donut pode salvar sua espécie?
+                    </h2>
                 </div>
                 <div class="components">
                     <div class="blockbuster-button">
                         <button id="play"><i class="fas fa-play"></i> Assistir</button>
-                        <button id="info"><i class="fas fa-info-circle"></i>  Mais Informações</button>
+                        <button id="info"><i class="fas fa-info-circle"></i> Mais Informações</button>
                     </div>
                     <div class="blockbuster-classification">
                         <button id="repeat"><i class="fas fa-redo"></i></button>

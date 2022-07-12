@@ -1,0 +1,238 @@
+            * {
+                margin: 0;
+                padding: 0;
+
+            }
+
+            body {
+                background-color: rgb(20, 20, 20);
+                background-image: linear-gradient(180deg, rgba(0, 0, 0, .9) 2%, transparent);
+                background-repeat: no-repeat;
+                color: white;
+                width: auto;
+                font-family: helvetica;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+
+
+
+            .main-movie {
+                background-image: url(img/filmecapa.png);
+                background-size: cover;
+                background-position: center;
+                width: auto;
+                height: 560px;
+                z-index: 1;
+            }
+
+            /*.main-movie:hover {
+        background-image: url(img/trailer.mp4);
+    }*/
+
+            .overlay {
+                position: absolute;
+                left: 0;
+                top: auto;
+                width: 100%;
+                height: 620px;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+            .movie-blockbuster {
+                display: flex;
+                flex-direction: column;
+                margin-left: 50px;
+            }
+
+            .sinopse-blockbuster {
+                display: flex;
+                flex-direction: column;
+                z-index: 1;
+                margin-top: 70px;
+            }
+
+            .sinopse-blockbuster img {
+                max-width: 15%;
+                max-height: 15%;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-left: -70px;
+            }
+
+            .sinopse-blockbuster h2 {
+                width: 35%;
+                text-align: start;
+                font-size: 25px;
+            }
+
+            /*Caixa dos componentes*/
+
+            .components {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                z-index: 1;
+            }
+
+            /*Caixa do button*/
+
+            .blockbuster-button {
+                display: inline;
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .components button {
+                font-size: 18px;
+                height: 46px;
+                padding-left: 10px;
+                text-align: center;
+                font-weight: bold;
+                border: 2px;
+                border-radius: 5px;
+                margin-left: 5px;
+            }
+
+            #play {
+                background-color: white;
+                color: black;
+                width: 155px;
+            }
+
+            #info {
+                background-color: rgba(29, 28, 28, 0.672);
+                color: white;
+                width: 237px;
+            }
+
+            #repeat {
+                padding: 10px;
+                margin: 10px;
+                background-color: rgba(0, 0, 0, 0.974);
+                border: 2px solid rgba(255, 255, 255, 0.782);
+                border-radius: 50%;
+                color: rgba(255, 255, 255, 0.782);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /*Caixa da classificação*/
+
+            .blockbuster-classification {
+                width: 10%;
+                margin-top: 30px;
+                height: auto;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .blockbuster-classification a {
+                display: flex;
+                width: 100%;
+                margin-top: 5px;
+                padding: 5px;
+                background-color: rgba(29, 28, 28, 0.672);
+            }
+
+            .blockbuster-classification img {
+                width: 35px;
+            }
+
+            /*Lista de categorias */
+
+            .movie-catalog {
+                margin-top: -120px;
+            }
+
+            .list-category {
+                width: auto;
+                height: auto;
+                padding-left: 50px;
+                position: relative;
+                top: 0;
+                left: 0;
+                padding-bottom: 50px;
+            }
+
+            .title-category {
+                padding-bottom: 7px;
+                font-size: 14px;
+            }
+
+            .container-movie {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .movie {
+                padding-left: 10px;
+                margin-left: -6px;
+            }
+
+            .movie img {
+                width: 228px;
+                height: auto;
+            }
+
+            /*Footer*/
+
+            footer {
+                width: 70%;
+                height: 200px;
+                margin-left: 250px;
+            }
+
+            .icons-social {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .icons-social a {
+                padding-left: 20px;
+                color: white;
+                padding-bottom: 10px;
+            }
+
+            .footer-menssage ul {
+                display: flex;
+                list-style: none;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 90px;
+                padding-bottom: 10px;
+                align-items: flex-start;
+            }
+
+            .footer-menssage ul li {
+                padding: 5px;
+                color: white;
+            }
+
+            .copywrite {
+                display: flex;
+            }
+
+            #cds {
+                border: 1px solid white;
+                width: 140px;
+                text-align: center;
+                margin-right: 10px;
+            }
