@@ -1,6 +1,7 @@
 .header {
     background-color: rgb(20, 20, 20);
     background-image: linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent);
+    background: transparent;
     font-size: 0.9rem;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     display: flex;
@@ -36,9 +37,12 @@
     display: inline;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
-/*search input*/
+.nav-router ul li:hover{
+    opacity: 0.5;
+}
 
 
 /*Caixa do usuário*/
@@ -72,6 +76,7 @@
 }
 .container-search .search .icon{
     font-size: 20px;
+    
 }
 .container-search.active{
     width:200px;
@@ -93,12 +98,10 @@
     position: absolute;
     top:0;
     width: 100%;
-    height: 100%;
-   
+    height: 100%;  
     border: none;
     outline: none;
     background-color: black;
-    background: transparent;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
