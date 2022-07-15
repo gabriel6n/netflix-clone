@@ -1,6 +1,18 @@
+function changeColorNavbar() {
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 10) {
+            document.querySelector('.header').style.background= "black";
+        }else{
+            document.querySelector('.header').style.background= "transparent";
+        }
+    })
+}
+
+changeColorNavbar()
 
 
-const expansiveSearchbar = () => {
+function expansiveSearchbar() {
     const search = document.querySelector(".search");
 
     search.addEventListener('click', () => {

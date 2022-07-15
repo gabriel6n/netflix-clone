@@ -1,7 +1,6 @@
 .header {
-    background-color: rgb(20, 20, 20);
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent);
-    background: transparent;
+    background:transparent;
+    opacity: 0.9; 
     font-size: 0.9rem;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     display: flex;
@@ -11,33 +10,40 @@
     position: sticky;
     top: 0;
     z-index: 5;
+    transition: 0.5s;
+}
+.header > div{
+    margin-right: 2%;
 }
 
-.header a {
-    width: auto;
-    margin-left: 4%;
+
+.header-logo  {
+    width: 8%;
+    height: 50%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #logo {
-    width: 120px;
+    width: 100%;
+    height: 100%;
 }
 
 /*Barra de navegação*/
 
 .nav-router {
-    width: 50%;
-
-}
-
-.nav-router ul {
-    width: auto;
+    width: 36%;
 }
 
 .nav-router ul li {
     display: inline;
     margin: 0;
+    margin-right: 3%;
     padding: 0;
     cursor: pointer;
+
 }
 
 .nav-router ul li:hover{
@@ -64,8 +70,9 @@
  width: 30px;
  height: 30px;
  position: relative;
- transition: 0.5s;
+ transition: 0.6s;
  overflow: hidden;
+ 
 
 }
 .container-search .search{
@@ -83,6 +90,7 @@
     border-style: solid;
     border-width:1px ;
     border-color: white;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .container-search .input{
@@ -101,7 +109,6 @@
     height: 100%;  
     border: none;
     outline: none;
-    background-color: black;
-    opacity: 0.7;
+    background: transparent;
 }
 
