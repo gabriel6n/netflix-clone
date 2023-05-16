@@ -1,0 +1,16 @@
+@import url(../movies/components/carrousel.css);
+@import url(../movies/components/pagination.css);
+.carousel {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1000;
+  overflow-y: auto;
+  margin-bottom: 8em;
+}
+.carousel .title.title--movie {
+  flex-grow: 5;
+}

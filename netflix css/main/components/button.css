@@ -1,0 +1,30 @@
+.container-btn {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  height: 2.5em;
+  padding: 1em 2em;
+  border-radius: 5px;
+  font-size: 1.6em;
+  background-color: white;
+  color: black;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn.btn--play::before {
+  content: "";
+  display: inline-block;
+  border-left: 0.3em solid;
+  border-top: 0.18em solid transparent;
+  border-bottom: 0.18em solid transparent;
+  font-size: 3em;
+  margin-right: 0.1em;
+  color: black;
+}
+.btn--info {
+  background-color: grey;
+  color: white;
+}

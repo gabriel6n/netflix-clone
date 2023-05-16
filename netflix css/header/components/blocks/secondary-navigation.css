@@ -1,0 +1,11 @@
+.secondary-navigation {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.element-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}

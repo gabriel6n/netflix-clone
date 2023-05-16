@@ -1,0 +1,12 @@
+.user .user__img {
+  width: 5em;
+  pad: 0.5em;
+}
+.user .user__img img {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}

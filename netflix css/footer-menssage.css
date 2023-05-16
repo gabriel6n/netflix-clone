@@ -1,0 +1,31 @@
+.footer {
+  height: 300px;
+  background-color: grey;
+}
+.wrapper-footer {
+  width: 80%;
+  margin-left: auto;
+  margin-left: auto;
+  row-gap: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: start;
+}
+.footer-menssage {
+  width: 980px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.footer-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  row-gap: 10px;
+  justify-content: start;
+}
+.footer-list__item {
+  margin-left: 25px;
+  font-size: 15px;
+}

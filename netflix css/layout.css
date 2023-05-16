@@ -1,0 +1,26 @@
+.header {
+  grid-area: header;
+}
+.poster {
+  grid-area: poster;
+}
+.div2 {
+  grid-area: listMovies;
+}
+footer {
+  grid-area: footer;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "poster poster poster poster"
+    "listMovies listMovies listMovies listMovies"
+    "footer footer footer footer";
+}
+.div2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5em;
+}

@@ -1,0 +1,13 @@
+.primary-navigation {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.navigation-tab {
+  margin-left: 20px;
+  transition: 0.5s;
+}
+.navigation-tab:hover {
+  opacity: 0.3;
+  color: grey;
+}

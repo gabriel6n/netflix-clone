@@ -1,0 +1,20 @@
+@import url(components/blocks/navigation.css);
+@import url(components/blocks/primary-navigation.css);
+@import url(components/blocks/secondary-navigation.css);
+@import url(../header/components/elements/logo.css);
+@import url(../header/components/elements/notification.css);
+@import url(../header/components/elements/search.css);
+@import url(../header/components/elements/user.css);
+
+.header {
+  padding: 1.5em 5em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  background-image: linear-gradient(to bottom, black, transparent);
+  z-index: 3;
+}
+.header.active {
+  background-color: black;
+}

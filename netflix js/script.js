@@ -1,22 +1,12 @@
-function changeColorNavbar() {
+const icon = document.querySelector(".icon");
+const search = document.querySelector(".search");
+icon.onclick = () => search.classList.toggle("active");
 
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 10) {
-            document.querySelector('.header').style.background= "black";
-        }else{
-            document.querySelector('.header').style.background= "transparent";
-        }
-    })
-}
+const header = document.querySelector("header");
+const body = document.querySelector("body");
 
-changeColorNavbar()
-
-
-function expansiveSearchbar() {
-    const search = document.querySelector(".search");
-
-    search.addEventListener('click', () => {
-        document.querySelector(".container-search").classList.toggle('active');
-    })
-}
-expansiveSearchbar();
+body.onscroll = () => {
+  window.pageYOffset == 0
+    ? header.classList.remove("active")
+    : header.classList.add("active");
+};

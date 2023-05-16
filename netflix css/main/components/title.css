@@ -1,0 +1,11 @@
+.title {
+  width: 400px;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.title.title--movie {
+  font-size: 15px;
+  vertical-align: center;
+}
