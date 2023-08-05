@@ -31,7 +31,7 @@ async function mainMoverRender() {
   buttonInfo.innerHTML = "Mais informações";
 
   containerButton.appendChild(buttonInfo);
-  containerButtonz.appendChild(buttonPlay);
+  containerButton.appendChild(buttonPlay);
 
   container.append(containerButton);
 
