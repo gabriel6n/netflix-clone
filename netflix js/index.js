@@ -18,18 +18,30 @@ async function mainMoverRender() {
   const container = setElement("div", "container");
   const movie = await setCardPoster();
 
+  const title = setElement("h2", "title");
+  title.innerHTML = movie.title;
+
+  const overview = setElement("span", "overview");
+  overview.innerHTML = movie.overview;
+
+  const containerButton = setElement("div", "container-btn");
+  const buttonPlay = setElement("button", ["btn", "btn--play"]);
+  const buttonInfo = setElement("button", ["btn", "btn--info"]);
+  buttonPlay.innerHTML = "Play";
+  buttonInfo.innerHTML = "Mais informações";
+
+  containerButton.appendChild(buttonInfo);
+  containerButtonz.appendChild(buttonPlay);
+
+  container.append(containerButton);
+
+  container.append(title);
+  container.append(overview);
+
   main.appendChild(container);
   body.appendChild(main);
 
-  const render = `  <h2 class="title">${movie.title}</h2>
-  <span class="overview">${movie.overview}</span>
-  <div class="container-btn">
-  <button class="btn btn--play">Assitir</button>
-  <button class="btn btn--info">Mais Informações</button>
-  </div>`;
-
   main.style.backgroundImage = movie.image;
-  container.innerHTML = render;
   await carouselMovieRender();
 }
 
@@ -40,10 +52,16 @@ async function carouselMovieRender() {
     const title = setElement("h3", ["title", "title--movie"]);
     const divCountPage = setPagination(item.listMovies.length);
     const listMovie = setElement("div", "carousel--listMovie");
+    const arrowLeft = setElement("span", ["arrow", "arrow__left"]);
+    const arrowRight = setElement("span", ["arrow", "arrow__right"]);
 
+    divCarousel.appendChild(arrowLeft);
     divCarousel.appendChild(title);
     divCarousel.appendChild(divCountPage);
+    divCarousel.appendChild(arrowRight);
 
+    arrowLeft.innerHTML = "<";
+    arrowRight.innerHTML = ">";
     title.innerHTML = item.title;
 
     item.listMovies.forEach((e) => {
