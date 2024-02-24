@@ -1,5 +1,5 @@
 const basicFetch = async (url) => {
-  const api_key = "0b849bd8a621f6ea3647c278b12ffd6b";
+  const api_key = "";
   const req = await fetch(`${url}${api_key}&language=pt-BR&page=1`).then(
     (res) => res.json()
   );
